@@ -2,395 +2,83 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0%;
-            padding: 0%;
-        }
-
-        /* .container{
-            background-color: rgb(142, 142, 142) !important;
-        } */
-        .conatiner-fluid {
-           
-            background: rgb(255, 220, 242);
-            background: linear-gradient(90deg, rgba(111, 108, 255, 0.773) 30%, rgb(213, 247, 255) 100%);
-         
-            animation-name: bg;
-            animation-duration: 10s;
-            /* animation-timing-function: linear; */
-            animation-delay: 1s;
-           
-            animation-iteration-count: infinite;
-
-       
-            
-
-        }
-        .curved {
-  position: relative;
-  background: #2c3e50;
-  height: 50vh;
-  border-bottom-left-radius: 50% 39%;
-  border-bottom-right-radius: 50% 39%;
-}
-         /* @keyframes bg {
-
-            0% {
-                
-                background: rgb(255, 220, 242);
-                background: linear-gradient(90deg, rgb(128, 100, 255) 30%, rgb(213, 247, 255) 100%);
-                transition-duration: 5s;
-               
-               
-            }
-
-            25% {
-                background: rgb(255, 220, 242);
-                background: linear-gradient(90deg, rgba(255, 43, 223, 0.614) 30%, rgb(213, 247, 255) 100%);
-                transition-duration: 10s;
-            }
-
-            50% {
-                background: rgb(255, 220, 242);
-                background: linear-gradient(90deg, rgba(46, 95, 255, 0.81) 30%, rgb(213, 247, 255) 100%);
-                transition-duration: 10s;
-            }
-
-            75% {
-                background: rgb(255, 220, 242);
-                background: linear-gradient(90deg, rgba(255, 255, 255, 0.614) 30%, rgb(213, 247, 255) 100%);
-                transition-duration: 10s;
-            }
-
-            100% {
-                background: rgb(255, 220, 242);
-                background: linear-gradient(90deg, rgba(126, 126, 126, 0.614) 30%, rgb(213, 247, 255) 100%);
-                transition-duration: 10s;
-            }
-          
-        } 
- */
-
-        /* banner section */
-
-
-        .banner {
-
-            padding-top: 10%;
-            padding-bottom: 20%;
-
-            z-index: 1;
-
-        }
-
-        /* .col-12 , .col-md-6{
-           
-            background-color: rgba(255, 255, 255, 0.945) !important;
-            border: solid 2px;
-           
-        } */
-        .banner-heading {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            position: relative;
-            font-size: 40px;
-            font-family: 'Noto Serif', serif;
-            padding: 10px;
-            padding-top: 10px;
-            text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.08);
-            /* background-color: antiquewhite; */
-        }
-
-        .banner-heading>.heading-sub {
-            padding-top: 20px;
-            font-size: 18px;
-
-            width: 100%;
-            /* background-color: rgb(255, 145, 0); */
-        }
-
-        .heading>.heading-btn {
-            position: relative;
-            padding-top: 30px;
-            padding-left: 30px;
-        }
-        
-       .design-line{
-            border-radius: 10px;
-            margin-top: 15px;
-            margin-left:40px ;
-            width: 150px;
-
-            height: 2px;
-          
-            animation-name: dl;
-            animation-duration: 12s;
-            animation-timing-function: linear;
-            animation-delay: 3s;
-            animation-iteration-count: infinite;
-         
-
-            
-        }
-        
-        @keyframes dl {
-            0% {
-                background-color: rgb(255, 0, 0);
-                left: 0px;
-                top: 0px;
-            }
-
-            25% {
-                background-color: rgb(0, 85, 255);
-                left: 50%;
-                top: 0px;
-            }
-
-            50% {
-                background-color: rgb(0, 118, 150);
-                left: 50%;
-                top: 50%;
-            }
-
-            75% {
-                background-color: rgb(196, 0, 0);
-                left: 0px;
-                top: 50%;
-            }
-
-            100% {
-                background-color: rgb(180, 31, 255);
-                left: 0px;
-                top: 0px;
-            }
-        }
-
-
-        .heading-btn>.btn-2 {
-            background-color: rgb(73, 73, 255) !important;
-            color: white;
-            border-color: white !important;
-        }
-
-        button {
-            width: auto;
-
-            padding-bottom: 7px;
-            padding-top: 7px;
-            padding-left: 30px;
-            padding-right: 30px;
-            border: 2px solid rgb(255, 255, 255) !important;
-            background-color: rgba(240, 248, 255, 0) !important;
-            border-radius: 50px;
-            box-shadow: 0px 1px 12px 1px rgba(0, 0, 0, 0.37);
-            -webkit-box-shadow: 0px 1px 12px 1px rgba(0, 0, 0, 0.37);
-            -moz-box-shadow: 0px 1px 12px 1px rgba(0, 0, 0, 0.37);
-        }
-
-        .btn-2:hover {
-
-            background-color: rgb(255, 202, 253) !important;
-            color: rgb(78, 13, 87) !important;
-            border: no;
-        }
-
-        .btn-1:hover {
-
-
-            background-color: rgb(255, 202, 253) !important;
-            color: rgb(78, 13, 87) !important;
-            border: no;
-
-        }
-
-        .banner-img {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .banner-img>img {
-            position: relative;
-
-
-            width: 400px;
-        }
-
-
-
-        /* design box */
-
-
-        #design-box {
-            width: 110px;
-            height: 110px;
-            background-color: rgba(255, 255, 255, 0);
-            border-radius: 100%;
-            position: absolute;
-            animation-name: db;
-            animation-duration: 15s;
-            animation-timing-function: linear;
-            animation-delay: 2s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            z-index: 0;
-
-        }
-
-        #design-box1 {
-            width: 100px;
-            height: 100px;
-            background-color: rgba(255, 255, 255, 0.655);
-            border-radius: 100%;
-            position: absolute;
-            animation-name: db;
-            animation-duration: 6s;
-            animation-timing-function: linear;
-            animation-delay: 3s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            margin-left: 50px;
-            z-index: 0;
-
-
-        }
-
-        #design-box2 {
-            width: 60px;
-            height: 60px;
-            background-color: rgba(255, 255, 255, 0.655);
-            border-radius: 100%;
-            position: absolute;
-            animation-name: db;
-            animation-duration: 10s;
-            animation-timing-function: linear;
-            animation-delay: 2s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            margin-left: 50px;
-            z-index: 0;
-
-
-        }
-
-        @keyframes db {
-            0% {
-                background-color: rgb(255, 255, 255);
-                left: 0px;
-                top: 0px;
-            }
-
-            25% {
-                background-color: rgba(255, 255, 255, 0.37);
-                left: 50%;
-                top: 0px;
-            }
-
-            50% {
-                background-color: rgb(255, 255, 255);
-                left: 50%;
-                top: 50%;
-            }
-
-            75% {
-                background-color: rgba(255, 255, 255, 0.41);
-                left: 0px;
-                top: 50%;
-            }
-
-            100% {
-                background-color: rgba(255, 255, 255, 0.462);
-                left: 0px;
-                top: 0px;
-            }
-        }
-    </style>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+ 
 </head>
 
 <body>
-    <div class="conatiner-fluid">
-        <div class="container">
+  <div class="conatiner-fluid">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-12">
+          <div class="banner">
 
             <div class="row">
+              <div id="design-box">
 
-                <div class="col-12">
-                    <div class="banner">
+              </div>
+              <div id="design-box1">
 
-                        <div class="row">
-                            <div id="design-box">
+              </div>
+              <div id="design-box2">
 
-                            </div>
-                            <div id="design-box1">
-
-                            </div>
-                            <div id="design-box2">
-
-                            </div>
-                            <div class="col-12 col-md-7">
+              </div>
+              <div class="col-12 col-md-7">
 
 
-                                <div class="heading">
-                                    <div class="banner-heading">
-                                        <div>The <span style="color: rgb(73, 73, 255);">future is code.</span> Join our
-                                            coding classes today!</div>
+                <div class="heading">
+                  <div class="banner-heading">
+                    <div>The <span style="color: rgb(73, 73, 255);">future is code.</span> Join our coding classes
+                      today!</div>
 
 
-                                        <div class="heading-sub text-muted">
-                                            Coding can be a very rewarding hobby. When you create something with code,
-                                            you can feel a sense of accomplishment. Coding can be a great way to learn
-                                            about how computers work. By learning to code, you will gain a deeper
-                                            understanding of how computers process information and solve problems.
-                                        </div>
-                                    </div>
-                                    <div class="heading-btn">
-                                        <button class="btn-1">DEMO</button>
-                                        <button class="btn-2">ENROLL </button>
-                                        
-                                            <!-- <div class="design-line">
-                                             </div>    -->
-                                         
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="col-12 col-md-5  d-sm-block d-none ">
-                                <div class="banner-img ">
-                                    <img src="hand2.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-
-
+                    <div class="heading-sub text-muted">
+                      Coding can be a very rewarding hobby. When you create something with code,
+                      you can feel a sense of accomplishment. Coding can be a great way to learn
+                      about how computers work. By learning to code, you will gain a deeper
+                      understanding of how computers process information and solve problems.
                     </div>
+                  </div>
+                  <div class="heading-btn">
+                    <button class="btn-1">DEMO</button>
+                    <button class="btn-2">ENROLL </button>
+
+                  </div>
 
                 </div>
+
+              </div>
+
+              <div class="col-12 col-md-5  d-sm-block d-none ">
+                <div class="banner-img ">
+                  <img src="hand2.png" alt="">
+                </div>
+              </div>
             </div>
+
+
+          </div>
+
         </div>
-    
+      </div>
     </div>
+  </div>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
