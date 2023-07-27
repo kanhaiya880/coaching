@@ -76,13 +76,14 @@
 
   }
   .nav-link{
-    color: rgb(86, 86, 255) !important;
+    
+    color: rgb(107, 107, 255) !important;
   }
 
   
 .nav-item {
-  font-size: 18px;
-  margin-right: 70px !important;
+  font-size: 16px;
+  margin-left: 100px;
   font-family: 'Heebo', sans-serif;
 }
 
@@ -93,7 +94,7 @@
 
   /* } */
 
-  @media screen and (max-width: 1087px) {
+  @media screen and (max-width: 1000px) {
 
     .nav-link{
     color: rgb(86, 86, 255) !important;
@@ -101,8 +102,8 @@
 
   
 .nav-item {
-  font-size: 18px;
-  margin-right: 180px ;
+  font-size: 15px;
+  margin-left: 0px !important;
   font-family: 'Heebo', sans-serif;
   margin-top: 7px;
   padding-left: 20px;
@@ -115,18 +116,18 @@
       /* Optional: To remove focus border as well */
       outline: none !important;
     }
-
-    .brand-icon{
-      -webkit-clip-path: polygon(49% 17%, 0 100%, 100% 100%);
-        clip-path: polygon(49% 17%, 0 100%, 100% 100%);
-
-
-    }
-
   }
+
+
+
 .navbar-brand > span{
+  position: absolute;
   font-family: 'Noto Serif', serif;
-  font-size: 21px;
+  margin-top: 2px;
+
+  font-size: 20px;
+ 
+  color: rgb(0, 116, 217);
 }
 
 </style>
@@ -138,7 +139,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg  px-3">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="#"> <img src="triangle.png" alt="" width="38px"> <span> &nbsp; Coding Traingle</span> </a>                    
+                      <a class="navbar-brand" href="#"> <img src="triangle.png" alt="" width="30px"> <span> &nbsp; Coding Traingle</span> </a>                    
                       <button class="navbar-toggler btn-no-border" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="fa fa-ellipsis-h" style="font-size: 28px; color: rgb(67, 67, 255);"></span>
                       </button>
@@ -165,10 +166,7 @@
                             <a class="nav-link disabled">Disabled</a>
                           </li>
                         </ul>
-                        <form class="d-flex" role="search">
-                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                          <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                     
                       </div>
                     </div>
                   </nav>
