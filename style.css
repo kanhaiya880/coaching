@@ -197,31 +197,31 @@
 
   @keyframes db {
     0% {
-      background-color: rgba(255, 255, 255, 0.281);
+      background-color: rgba(255, 255, 255, 0.275);
       left: 0px;
       top: 0px;
     }
   
     25% {
-      background-color: rgba(255, 255, 255, 0.37);
+      background-color: rgba(255, 255, 255, 0.275);
       left: 50%;
       top: 0px;
     }
   
     50% {
-      background-color: rgb(255, 255, 255);
+      background-color: rgba(255, 255, 255, 0.275);
       left: 50%;
       top: 50%;
     }
   
     75% {
-      background-color: rgba(255, 255, 255, 0.41);
+      background-color: rgba(255, 255, 255, 0.275);
       left: 0px;
       top: 50%;
     }
   
     100% {
-      background-color: rgba(255, 255, 255, 0.462);
+      background-color: rgba(255, 255, 255, 0.275);
       left: 0px;
       top: 0px;
     }
