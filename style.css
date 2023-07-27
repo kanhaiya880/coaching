@@ -3,11 +3,14 @@
   margin: 0%;
   padding: 0%;
 }
-
+.container-fluid{
+  margin: 0%;
+  padding: 0%;
+}
 /* .container{
         background-color: rgb(142, 142, 142) !important;
     } */
-.conatiner-fluid {
+.container-bg {
   background: rgb(255, 220, 242);
   background: linear-gradient(90deg, rgb(255, 220, 244) 30%, rgb(213, 247, 255) 100%);
 

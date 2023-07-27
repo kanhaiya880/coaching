@@ -13,14 +13,66 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
- 
+  <style>
+    .divider{
+        width: auto;
+        height: 100px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 25px;
+  font-family: 'Noto Serif', serif;
+  color: rgb(0, 0, 0);
+        /* border: 1px solid royalblue; */
+
+    }
+    .divider > .divider-design{
+        width: 150px;
+        height: 7px;
+        background-color: rgb(47, 106, 140);
+        border-radius: 10px;
+
+        
+    }
+    .divider-design > .ball{
+        position: relative;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        animation-name: dd;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+    }
+    @keyframes dd {
+    0% {
+      
+      left: 0px;
+      top: 0px;
+    }
+  
+
+  
+    100% {
+      
+      left: 150px;
+      top: 0px;
+    }
+  }
+</style>
 </head>
 
 <body>
   <section>
 
 
-  <div class="conatiner-fluid">
+  <div class="conatiner-fluid  container-bg">
     <div class="container">
 
       <div class="row">
@@ -79,6 +131,35 @@
     </div>
   </div>
 
+</section>
+<section>
+    <div class="container-fluid">
+        <div class="divider">
+            <div class="divider-name">
+                OUER DOMAINS
+            </div>
+            <div class="divider-design">
+                <div class="ball">
+
+                </div>
+
+            </div>
+           
+        </div>
+    </div>
+  
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
