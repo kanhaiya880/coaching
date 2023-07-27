@@ -73,14 +73,12 @@
 }
 
 .heading-btn>.btn-2 {
-  background-color: rgb(73, 73, 255) !important;
   background-color: rgb(73, 73, 255);
   color: white;
-  border-color: white !important;
   border-color: white ;
 }
 
-button {
+.btn-2,.btn-1 {
   width: auto;
 
   padding-bottom: 7px;
