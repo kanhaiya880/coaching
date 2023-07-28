@@ -21,6 +21,70 @@
   <link rel="stylesheet" href="header.css">
    <link rel="stylesheet" href="domain.css">
    <link rel="icon" href="triangle.png">
+   <style>
+    #circle{
+      position: relative;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      z-index:2;
+      background-color: rgb(217, 207, 255);
+      
+    }
+    .bg-primary{
+      background: rgb(255, 220, 242);
+  background: linear-gradient(90deg, rgb(255, 220, 244) 30%, rgb(213, 247, 255) 100%) !important;
+  z-index: 0;
+    }
+   .procedure > ul > li{
+    
+      display: flex;
+      list-style-type: none;
+      column-gap: 30px;
+     
+    }
+    .vertical-line {
+  width: 0;
+  height: 100%; /* Adjust the height of the line as per your requirement */
+  position: relative;
+  z-index: 0;
+}
+
+.vertical-line::before {
+  content: "";
+  position: absolute;
+  top: -10%;
+  left: 70%;
+  margin-left: 25px;
+
+
+  transform: translateX(-50%);
+  width: 1px; /* Adjust the width of the line as per your requirement */
+  height: 100%; /* Adjust the height of the line as per your requirement */
+  background-color: rgb(217, 207, 255);/* Change the color as per your requirement */
+}
+.section-title
+{
+  width: 85%;
+  position: relative;
+  margin-left: 38px;
+  margin-bottom: 40px;
+}
+.section-title > .divider-design{
+  margin-top: 20px;
+    width: 150px;
+    height: 7px;
+    background-color: rgb(47, 106, 140);
+    border-radius: 10px;
+
+   
+}
+   </style>
+
+
 </head>
 
 <body>
@@ -124,7 +188,7 @@
   </div>
 
 </section>
-<section>
+<section class="pt-4">
     <div class="container-fluid">
         <div class="divider">
             <div class="divider-name">
@@ -162,6 +226,73 @@
     </div>
 </section>
 
+<section  class="pt-5">
+  <div class="container-fluid pt-5 bg-primary">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <div class="procedure">
+            <div class="section-title">
+              <h5>How it Works</h5>
+              <h2>Choose a program that
+                strengthen your skillset.</h2>
+                <div class="divider-design">
+                  <div class="ball">
+  
+                  </div>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <div>
+                  <span id="circle">1</span>
+                  <div class="vertical-line"></div>
+                </div>
+                
+                <div>
+                  <h4>Enroll in the course</h4>
+                  <p>Enroll in the course you are interested and join daily practical session to get most out of the course.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span id="circle">2</span>
+                  <div class="vertical-line"></div>
+                </div>
+                
+                <div>
+                  <h4>One to one mentorship</h4>
+                  <p>Get one to one mentorship and doubt sessions with module of weekly task and real world to project to stand out in the industry.</p>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <span id="circle">3</span>
+                  <!-- <div class="vertical-line"></div> -->
+                </div>
+                
+                <div>
+                  <h4>  Completion Certificate</h4>
+                  <p>
+                    Completion Certificate
+                    Finally earn a industry level certificate.
+                    To know more about coding circle academy download the free brochure.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+         
+         
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="text-center d-lg-block d-none"> 
+            <img src="hand2.png" alt="" width="400px"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
@@ -169,7 +300,7 @@
     loop:true,
     margin:10,
     nav:false,
-    dots:true,
+    dots:false,
     autoplay:true,
     
     responsiveClass:true,
