@@ -35,16 +35,6 @@ animation-iteration-count: infinite;
 animation-direction: alternate;
 
 }
-.divider-name{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.divider-name> span{
-  font-size: 16px;
-  color: rgb(82, 82, 255);
-}
 @keyframes dd {
 0% {
   
