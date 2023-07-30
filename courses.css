@@ -2,16 +2,24 @@
 .courses .card{
     background-color: rgb(114, 49, 255);
     color: rgb(255, 255, 255);
+    border-radius: 10px;
     border: 2px solid rgb(0, 19, 142);
     box-shadow: 11px 15px 8px -3px rgba(0,0,0,0.62);
 -webkit-box-shadow: 11px 15px 8px -3px rgba(0,0,0,0.62);
 -moz-box-shadow: 11px 15px 8px -3px rgba(0,0,0,0.62);
+ overflow: hidden;
+
  }
 
 
   .card-body > .btn{
     background-color: rgb(37, 0, 137);
     border: none;
+    
+  }
+  .card > img{
+   padding: 2px;
+   border-radius: 10px;
   }
   .card-text{
     color: rgb(255, 255, 255);
@@ -20,4 +28,10 @@
   .card-text{
     color: rgb(255, 255, 255);
   }
+  img:hover{
+  
+  transform: scale(1.11);
+  transition: 2s;
+  overflow: hidden;
  
+ }
