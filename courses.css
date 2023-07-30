@@ -20,6 +20,7 @@
   .zoom{
    padding: 2px;
    border-radius: 10px;
+   transition: 1s;
   }
   .card-text{
     color: rgb(255, 255, 255);
@@ -31,7 +32,7 @@
   .card > img:hover{
   
   transform: scale(1.11);
-  transition: 2s;
+  transition: 1s;
   overflow: hidden;
  
  }
