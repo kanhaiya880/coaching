@@ -17,7 +17,7 @@
     border: none;
     
   }
-  .card > img{
+  .zoom{
    padding: 2px;
    border-radius: 10px;
   }
@@ -28,7 +28,7 @@
   .card-text{
     color: rgb(255, 255, 255);
   }
-  img:hover{
+  .card > img:hover{
   
   transform: scale(1.11);
   transition: 2s;
